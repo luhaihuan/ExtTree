@@ -42,7 +42,7 @@ public class GetData extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 	
-
+        System.out.println("this is luhaihuan");
 		for(Map.Entry<String, String[]> entry:request.getParameterMap().entrySet()) {
 			System.out.println("key:"+entry.getKey());
 			if("item_id".equals(entry.getKey())) {
